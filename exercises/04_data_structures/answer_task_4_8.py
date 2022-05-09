@@ -24,20 +24,12 @@
 Это не значит, что задание сделано правильно, просто на данном этапе сложно иначе
 проверять результат.
 """
-
 ip = "192.168.3.1"
-ip_split = ip.split('.')
 
-ip_template = '''
-    {0:<10} {1:<10} {2:<10} {3:<10}
-    {0:08b}  {1:08b}  {2:08b}  {3:08b}
-    '''
+octets = ip.split(".")
 
-#ip_template2 = '''
-#    {0:08b} {1:08b} {2:08b} {3:08b}
- #   '''
+output = """
+{0:<10}{1:<10}{2:<10}{3:<10}
+{0:08b}  {1:08b}  {2:08b}  {3:08b}"""
 
-print(ip_template.format(int(ip_split[0]), int(ip_split[1]), int(ip_split[2]), int(ip_split[3])))
-
-#print(result)
-#print(ip_template2.format(192, 168, 3, 1))
+print(output.format(int(octets[0]), int(octets[1]), int(octets[2]), int(octets[3])))

@@ -16,3 +16,28 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+##mac_sp = mac.split(':')
+    #print(mac_sp)
+##mac1, mac2, mac3 = (int((mac_sp[0]), 16)),(int((mac_sp[1]), 16)), (int((mac_sp[2]), 16))
+    #mac2 = int((mac_sp[1]), 16)
+    #mac3 = int((mac_sp[2]), 16)
+    #print(mac1, mac2, mac3)
+    #print('{:b} {:b} {:b}'.format(mac_sp[0], mac_sp[1], mac_sp[2]))
+    #print('{:b} {:b} {:b}'.format(mac1, mac2, mac3))
+##result = ('{:b} {:b} {:b}'.format(mac1, mac2, mac3))
+##result1 = result.replace(' ', '')
+##print(result1)
+    #result1 = result.split()
+
+result = '{:b}'.format(int(mac.replace(':',''), 16))
+print(result)
+#mac1 = mac_sp[0]
+#mac2 = mac_sp[1]
+#mac3 = mac_sp[2]
+
+#mac1_bin = '{:b}'.format(int(mac1,16))
+#mac2_bin = '{:b}'.format(int(mac2,16))
+#mac3_bin = '{:b}'.format(int(mac3,16))
+
+#result = mac1_bin + mac2_bin + mac3_bin
+#print(result)

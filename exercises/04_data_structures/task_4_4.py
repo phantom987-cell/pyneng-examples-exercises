@@ -24,3 +24,13 @@
 """
 
 vlans = [10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10]
+#vlans.sort()
+#print(vlans)
+#result = list(set(vlans))
+#result.sort
+#result = set(vlans)
+result = list(set(vlans))
+result.sort()
+#print(vlans)
+#print(result)
+print(result)
